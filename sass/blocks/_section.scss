@@ -1,0 +1,54 @@
+.travel{
+    @include d-flex(row, space-between, center,0 ,50px);
+    margin-top: 100px;
+    &__text{
+        @include d-flex(column, space-between, 0, 0,10px);
+        h2{
+            @include h-property(60px, 90px, 300);
+        }
+        p{
+            @include h-property(40px, 50px, 300);
+        }
+    }
+}
+
+.most{
+    @include d-flex(column, space-between, center,0, 200px);
+    margin-top: 100px;
+    h2{
+        // @include h-property(14px, 15px, 300)
+    }
+    img{
+        width: 500px;
+    }
+    a{
+        color: #000
+    }
+    &__boxes{
+        @include d-flex(row, space-between, center, wrap, 20px);
+    }
+    input{
+        @include h-property;
+        padding: 10px 30px;
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    &__box{
+        @include d-flex(column, space-between, 0, 0, 10px)
+    }
+}
+
+.img{
+    margin-top: 100px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    &__container{
+        display: flex;
+        gap: 20px;
+    }
+    img {
+       width: 47% 
+    };
+}

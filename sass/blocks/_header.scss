@@ -1,0 +1,18 @@
+.header{
+    @include d-flex(0, space-between, center);
+    padding-top: 60px;
+    @include h-property(14px, 24px, 300);
+    &__list{
+        @include d-flex;
+        @include h-property(20px);
+    }
+    a{
+        color: #000;
+        &:hover{
+            border-bottom: 1px solid #000;
+        }
+    }
+    img{
+        display: none;
+    }
+}
